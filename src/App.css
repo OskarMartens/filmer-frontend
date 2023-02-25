@@ -1,0 +1,60 @@
+.neon-border-container {
+  max-width: 80%;
+  min-width: 80%;
+}
+
+.neon-border {
+  background: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #ffd8d8;
+  width: 100%;
+  max-width: 400px;
+  padding: 4rem 4rem;
+  margin: auto;
+  margin-top: -7rem;
+  box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #e50b0b,
+    0 0 4vw 0.4vw #e50b0b, inset 0 0 1.5vw 0.4vw #e50b0b,
+    inset 0 0 0.4vw 0.2vw #e50b0b, inset 0 0 0.5vw 0.2vw #fff7f7;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .neon-border {
+    box-shadow: 0 0 0.2rem 0.4rem #fff7f7, 0 0 0.6rem 0.8rem #e50b0b,
+      0 0 6rem 0.6rem #e50b0b, inset 0 0 2rem 0.6rem #e50b0b,
+      inset 0 0 0.6rem 0.4rem #e50b0b, inset 0 0 0.8rem 0.4rem #fff7f7;
+  }
+}
+
+.neon-text {
+  font-size: 5rem;
+  /* font-family: "Imbue", serif; */
+  /* font-family: "MV Boli", cursive; */
+  padding: 0 0 0 0;
+  text-shadow: 0.4vw 0vw 2vw #e50b0b, 0.1vw 0vw 1vw #e50b0b,
+    0.2vw 0vw 1vw #e50b0b, 0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b,
+    0.2vw 0vw 20vw #e50b0b, 0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b,
+    0.2vw 0vw 30vw #e50b0b, 0.4vw 0vw 10vw #e50b0b;
+}
+
+.poster {
+  max-height: 300px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.poster-swipe-left {
+  transform: translateX(-150%) rotate(-45deg);
+  opacity: 0;
+}
+
+.poster-swipe-right {
+  transform: translateX(150%) rotate(45deg);
+  opacity: 0;
+}
