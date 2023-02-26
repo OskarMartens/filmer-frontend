@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         'neon-red': '#e50b0b',
+      },
+      aspectRatio: {
+        '2/3': '2 / 3'
       }
     },
   },

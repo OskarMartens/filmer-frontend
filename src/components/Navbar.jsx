@@ -6,14 +6,13 @@ import "../App.css";
 
 function Navbar() {
   return (
-    <div>
-      <nav className="flex justify-center fixed inset-x-0 bottom-0 z-10 space-x-10 pb-5 border-t-4 border-neon-red bg-white">
+      <nav className="flex justify-center fixed inset-x-0 bottom-0 z-10 space-x-10 border-t-4 border-neon-red bg-white py-1">
         <div className="flex flex-col items-center">
           <a href="/Profilepage" className={`font-medium py-2 rounded-lg`}>
             <img
               src={profile}
               alt="Profil"
-              style={{ width: "50px", height: "50px" }}
+              className="w-6 h-6"
             />
           </a>
           <span className="text-xs text-slate-600">Profil</span>
@@ -23,7 +22,7 @@ function Navbar() {
             <img
               src={clapperboard_white}
               alt="Filmer"
-              style={{ width: "50px", height: "50px" }}
+              className="w-6 h-6"
             />
           </a>
           <span className="text-xs text-slate-600">Filmer</span>
@@ -33,13 +32,12 @@ function Navbar() {
             <img
               src={friends}
               alt="Vänner"
-              style={{ width: "50px", height: "50px" }}
+              className="w-6 h-6"
             />
           </a>
           <span className="text-xs text-slate-600">Vänner</span>
         </div>
       </nav>
-    </div>
   );
 }
 
