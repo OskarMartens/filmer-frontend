@@ -122,7 +122,7 @@ function Homepage() {
     },
     {
       id: 4,
-      title: "The Godfather",
+      title: "The Godfather asdad adasd asdasd adsdasd",
       poster: "../movie-posters/theGodfather.jpg",
     },
   ];
@@ -160,22 +160,32 @@ function Homepage() {
         />
       </div>
     ) : (
-      <p className="neon-text">All movies have been rated.</p>
+      <p className="neon-text ml-10 mr-10 mt-10">Alla filmer har betygsatts</p>
     );
   };
 
   return (
-    <div className="flex h-screen w-full items-center pt-12 flex-col bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm backdrop-blur-3xl">
-      <h1 className="neon-text text-5xl pb-4 text-center">
-        {mockData[currentMovieIndex]?.title}
-      </h1>
+    <div className="flex h-screen w-full items-center flex-col relative">
+      <div className="absolute inset-0 bg-cover bg-bottom bg-no-repeat bg-stockholm blur-lg"></div>
+      <div className="h-24 flex items-center justify-center w-full z-10">
+        <h1
+          className={`neon-text text-center ${
+            mockData[currentMovieIndex]?.title.length > 35
+              ? "text-lg"
+              : "text-5xl"
+          }`}
+          style={{ maxWidth: "800px" }}
+        >
+          {mockData[currentMovieIndex]?.title}
+        </h1>
+      </div>
       <div
         className="neon-border items-center justify-center aspect-2/3 backdrop-blur-sm
-              max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl rounded-0"
+      max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl rounded-0"
       >
         {renderMovie()}
       </div>
-      <div className="flex text-center space-x-10 pt-4">
+      <div className="absolute bottom-20 left-0 right-0 flex text-center justify-center space-x-10">
         <button onClick={handleDislike}>
           <img
             src={cancelbutton48}

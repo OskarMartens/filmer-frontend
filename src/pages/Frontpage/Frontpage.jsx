@@ -1,12 +1,12 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 
 function Frontpage() {
   return (
     <div className="flex h-screen w-full items-center justify-center flex-col bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
-      <div className="neon-border items-center justify-center aspect-2/3 backdrop-blur-sm 
+      <div className="neon-border mb-10 items-center mt-7 justify-center aspect-2/3 backdrop-blur-sm 
               max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl">
-        <h1 className="neon-text text-6xl pt-4 text-center mb-4">
+        <h1 className="neon-text text-6xl pt-5 text-center mb-4">
           Filmer
         </h1>
         <form className="flex flex-col items-center ml-4 mr-4"  action="">
