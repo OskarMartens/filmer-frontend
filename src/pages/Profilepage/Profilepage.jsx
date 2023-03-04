@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 
-function Friendspage() {
+function Profilepage() {
   return (
-    <div>Friendspage
+    <div>Profilepage
         <Navbar />
     </div>
   )
 }
 
-export default Friendspage
+export default Profilepage

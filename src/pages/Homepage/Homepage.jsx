@@ -165,44 +165,71 @@ function Homepage() {
   };
 
   return (
-    <div className="flex h-screen w-full items-center flex-col relative">
-      <div className="absolute inset-0 bg-cover bg-bottom bg-no-repeat bg-stockholm blur-lg"></div>
-      <div className="h-24 flex items-center justify-center w-full z-10">
-        <h1
-          className={`neon-text text-center ${
-            mockData[currentMovieIndex]?.title.length > 35
-              ? "text-lg"
-              : "text-5xl"
-          }`}
-          style={{ maxWidth: "800px" }}
-        >
-          {mockData[currentMovieIndex]?.title}
-        </h1>
-      </div>
-      <div
-        className="neon-border items-center justify-center aspect-2/3 backdrop-blur-sm
-      max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl rounded-0"
-      >
-        {renderMovie()}
-      </div>
-      <div className="absolute bottom-20 left-0 right-0 flex text-center justify-center space-x-10">
-        <button onClick={handleDislike}>
-          <img
-            src={cancelbutton48}
-            alt="Filmer"
-            style={{ width: "50px", height: "50px" }}
-          />
-        </button>
-        <button onClick={handleLike}>
-          <img
-            src={likebutton48}
-            alt="Filmer"
-            style={{ width: "50px", height: "50px" }}
-          />
-        </button>
-      </div>
-      <Navbar />
+<div className="flex h-screen w-full items-center justify-center flex-col bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
+  <h1 className="neon-text text-5xl pt-5 text-center">
+    {mockData[currentMovieIndex]?.title}
+  </h1>
+  <div className="neon-border mb-10 items-center mt-7 justify-center aspect-2/3 backdrop-blur-sm max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl">
+    <div className="w-full h-full">
+      {renderMovie()}
     </div>
+  </div>
+  <div className="absolute bottom-16 left-0 right-0 flex text-center justify-center space-x-10">
+    <button onClick={handleDislike}>
+      <img
+        src={cancelbutton48}
+        alt="Filmer"
+        style={{ width: "50px", height: "50px" }}
+      />
+    </button>
+    <button onClick={handleLike}>
+      <img
+        src={likebutton48}
+        alt="Filmer"
+        style={{ width: "50px", height: "50px" }}
+      />
+    </button>
+  </div>
+  <Navbar />
+</div>
+    // <div className="flex h-screen w-full items-center flex-col relative">
+    //   <div className="absolute inset-0 bg-cover bg-bottom bg-no-repeat bg-stockholm blur-lg"></div>
+    //   <div className="h-24 flex items-center justify-center w-full z-10">
+    //     <h1
+    //       className={`neon-text text-center ${
+    //         mockData[currentMovieIndex]?.title.length > 35
+    //           ? "text-lg"
+    //           : "text-5xl"
+    //       }`}
+    //       style={{ maxWidth: "800px" }}
+    //     >
+    //       {mockData[currentMovieIndex]?.title}
+    //     </h1>
+    //   </div>
+    //   <div
+    //     className="neon-border items-center justify-center aspect-2/3 backdrop-blur-sm
+    //   max-w-screen-lg max-h-screen-lg lg:max-w-screen-xl lg:max-h-screen-xl rounded-0"
+    //   >
+    //     {renderMovie()}
+    //   </div>
+    //   <div className="absolute bottom-28 left-0 right-0 flex text-center justify-center space-x-10">
+    //     <button onClick={handleDislike}>
+    //       <img
+    //         src={cancelbutton48}
+    //         alt="Filmer"
+    //         style={{ width: "50px", height: "50px" }}
+    //       />
+    //     </button>
+    //     <button onClick={handleLike}>
+    //       <img
+    //         src={likebutton48}
+    //         alt="Filmer"
+    //         style={{ width: "50px", height: "50px" }}
+    //       />
+    //     </button>
+    //   </div>
+    //   <Navbar />
+    // </div>
   );
 }
 export default Homepage;
