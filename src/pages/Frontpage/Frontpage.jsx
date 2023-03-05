@@ -3,13 +3,13 @@ import "../../App.css";
 
 function Frontpage() {
   return (
-    <div class="grid grid-cols-11 grid-rows-9 h-screen bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
+    <div class="grid grid-cols-11 grid-rows-16 h-screen bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
     <h1 className="mobile-s:row-start-2 mobile-s:col-start-1 mobile-s:col-span-11
                   neon-text text-6xl text-center">Filmer</h1>
       <div
-        class="mobile-s:row-start-3 mobile-s:col-start-2 mobile-s:col-span-9 
-                  tablet:row-start-3 tablet:col-start-4 tablet:col-span-5 
-                  laptop:row-start-3 laptop:col-start-5 laptop:col-span-3
+        class="mobile-s:row-start-4 mobile-s:col-start-2 mobile-s:col-span-9 
+                  tablet:row-start-4 tablet:col-start-4 tablet:col-span-5 
+                  laptop:row-start-4 laptop:col-start-5 laptop:col-span-3
                   aspect-2/3 backdrop-blur-sm neon-border"
       >
         <div
