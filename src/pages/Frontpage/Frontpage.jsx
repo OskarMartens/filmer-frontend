@@ -4,16 +4,16 @@ import "../../App.css";
 function Frontpage() {
   return (
     <div class="grid grid-cols-11 grid-rows-9 h-screen bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
+    <h1 className="mobile-s:row-start-2 mobile-s:col-start-1 mobile-s:col-span-11
+                  neon-text text-6xl text-center">Filmer</h1>
       <div
-        class="mobile-s:col-start-2 mobile-s:col-span-9 mobile-s:row-start-2
-                  tablet:col-start-4 tablet:col-span-5 tablet:row-start-2 tablet:row-span-6
-                  laptop:col-start-5 laptop:col-span-3
+        class="mobile-s:row-start-3 mobile-s:col-start-2 mobile-s:col-span-9 
+                  tablet:row-start-3 tablet:col-start-4 tablet:col-span-5 
+                  laptop:row-start-3 laptop:col-start-5 laptop:col-span-3
                   aspect-2/3 backdrop-blur-sm neon-border"
       >
-        <h1 className="neon-text text-6xl pt-10 text-center mb-4">Filmer</h1>
         <div
-          className="absolute mobile-s:bottom-10 mobile-s:left-1/2 mobile-s:right-1/2
-          laptop-l:justify-center laptop-l:items-center"
+          className="absolute mobile-s:bottom-20 laptop-l:bottom-40 mobile-s:left-1/2 mobile-s:right-1/2"
         >
           <form
             className="flex flex-col justify-between items-center"

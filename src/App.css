@@ -30,6 +30,18 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .neon-border {
+    box-shadow:
+      0 0 0.2rem 0.4rem #fff7f7,
+      0 0 0.6rem 0.8rem #e50b0b,
+      0 0 6rem 0.6rem #e50b0b,
+      inset 0 0 2rem 0.6rem #e50b0b,
+      inset 0 0 0.6rem 0.4rem #e50b0b,
+      inset 0 0 0.8rem 0.4rem #fff7f7;
+  }
+}
+
 @media (max-width: 320px) {
   .neon-border {
     max-width: 270px;
@@ -55,6 +67,69 @@
     0.2vw 0vw 20vw #e50b0b, 0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b,
     0.2vw 0vw 30vw #e50b0b, 0.4vw 0vw 10vw #e50b0b;
 }
+
+.green-neon-button {
+  background: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #b7ffca;
+  box-shadow:
+    0 0 0.1vw 0.4vw #fff7f7,
+    0 0 0.4vw 0.6vw #00e600,
+    0 0 4vw 0.4vw #00e600,
+    inset 0 0 1.5vw 0.4vw #00e600,
+    inset 0 0 0.4vw 0.2vw #00e600,
+    inset 0 0 0.5vw 0.2vw #fff7f7;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.green-neon-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.green-neon-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.red-neon-button {
+  background: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #ff6666;
+  box-shadow:
+    0 0 0.1vw 0.4vw #ffe5e5,
+    0 0 0.4vw 0.6vw #ff6666,
+    0 0 4vw 0.4vw #ff6666,
+    inset 0 0 1.5vw 0.4vw #ff6666,
+    inset 0 0 0.4vw 0.2vw #ff6666,
+    inset 0 0 0.5vw 0.2vw #ffe5e5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.red-neon-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.red-neon-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 
 .poster {
   max-height: 300px;
