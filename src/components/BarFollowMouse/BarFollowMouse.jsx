@@ -29,14 +29,15 @@ function BarFollowMouse() {
     width: distanceFromMouse,
     height: 0,
     borderLeft: "0px solid transparent",
-    borderRight: "10px solid transparent",
-    borderBottom: "15px solid rgba(255, 255, 255, 0.5)",
+    borderRight: "px solid transparent",
+    borderBottom: "10px solid rgba(255, 255, 255, 0.5)",
     transformOrigin: "bottom right",
     transform: `rotate(${angle}rad)`,
     position: "absolute",
     bottom: 0,
     right: 0,
     boxShadow: "0px 0px 50px 20px rgba(255, 255, 255, 0.3)",
+    cursor: "none"
   };
 
   return <div style={styles}></div>;

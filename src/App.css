@@ -3,6 +3,10 @@
   position: relative;
 }*/
 
+*{
+  cursor: "none"
+}
+
 .neon-border {
   background: rgba(0, 0, 0, 0.2);
   border-style: solid;

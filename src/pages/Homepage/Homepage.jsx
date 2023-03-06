@@ -6,6 +6,7 @@ import likebutton48 from "../../assets/icons/icons8-checkmark-48.png";
 import likebutton96 from "../../assets/icons/icons8-checkmark-96.png";
 import cancelbutton48 from "../../assets/icons/icons8-cancel-48.png";
 import cancelbutton96 from "../../assets/icons/icons8-cancel-96.png";
+import BarFollowMouse from "../../components/BarFollowMouse/BarFollowMouse";
 
 
 function Homepage() {
@@ -121,6 +122,7 @@ function Homepage() {
           />
         </button>
       </div>
+      <BarFollowMouse />
       <Navbar />
     </div>
   );
