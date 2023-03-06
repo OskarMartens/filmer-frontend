@@ -1,7 +1,22 @@
 import React from "react";
 import "../../App.css";
+import Headlight from "../../components/Headlight/Headlight";
+import { useState, useEffect } from "react";
+import MouseFollower from "../../components/MouseFollower/MouseFollower";
+import Skysignal from "../../components/Skylight/Skysignal";
+import BarFollowMouse from "../../components/BarFollowMouse/BarFollowMouse";
+
 
 function Frontpage() {
+
+  const [mouseX, setMouseX] = useState(0);
+  const [mouseY, setMouseY] = useState(0);
+
+  const handleMouseMove = (event) => {
+    setMouseX(event.clientX);
+    setMouseY(event.clientY);
+  };
+
   return (
     <div class="grid grid-cols-11 grid-rows-16 h-screen bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm">
     <h1 className="mobile-s:row-start-2 mobile-s:col-start-1 mobile-s:col-span-11
@@ -46,13 +61,9 @@ function Frontpage() {
           </form>
         </div>
       </div>
+      <BarFollowMouse />
     </div>
   );
 }
 
 export default Frontpage;
-{
-  /* <div className="laptop-l:row-start-6">
-        <div className="neon-text text-2xl">Info</div>
-      </div> */
-}

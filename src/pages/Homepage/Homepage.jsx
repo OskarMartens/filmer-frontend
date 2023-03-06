@@ -80,20 +80,24 @@ function Homepage() {
 
   return (
     <div className="grid grid-cols-11 grid-rows-16 h-screen bg-gray-900 bg-cover bg-bottom bg-no-repeat bg-stockholm backdrop-blur-lg">
-      <h1
-        className={`flex justify-center text-center row-start-2 col-start-1 col-end-12 neon-text ${
-          (mockData[currentMovieIndex]?.title || "").length > 35
-            ? "text-lg laptop-l:text-3xl"
-            : "text-5xl"
-        }`}
-        style={{ maxWidth: "800px", margin: "0 auto" }}
-      >
-        {mockData[currentMovieIndex]?.title || (
-          <h1 className="text-lg laptop-l:text-5xl">
+   <h1
+    className={`flex justify-center text-center row-start-2 col-start-1 col-end-12 neon-text ${
+      (mockData[currentMovieIndex]?.title || "").length > 35
+        ? "text-2xl laptop-l:text-3xl"
+        : "text-6xl"
+    }`}
+    style={{ maxWidth: "800px", margin: "0 auto" }}
+  >
+    {mockData[currentMovieIndex]?.title
+      ? mockData[currentMovieIndex].title
+          .split(" ")
+          .map((word, i) =>
+            i !== 0 && i % 4 === 0 ? [<br key={i} />, word] : " " + word
+          )
+      :  <h1 className="text-3xl laptop-l:text-5xl">
             Alla filmer har betygsatts
-          </h1>
-        )}
-      </h1>
+          </h1>}
+  </h1>
       <div
         className="row-start-4 row-span-5 col-start-2 col-span-9
                       tablet:col-start-5 tablet:col-span-3
